@@ -1,0 +1,26 @@
+# Some images need adictional configuration
+FROM debian
+
+# LABEL com.github.containers.toolbox="true"
+
+# install dependencies
+RUN apt-get update && \
+    apt-get -y install sudo libcap2-bin && \
+    apt-get clean
+
+# configuring sudoers
+RUN sed -i -e 's/ ALL$/ NOPASSWD:ALL/' /etc/sudoers
+
+# creating localtime file (podman-toolbox requirement)
+RUN touch /etc/localtime
+RUN echo VARIANT_ID=container >> /etc/os-release
+
+# --------------------------------------
+# list here other commands, if needed
+
+# RUN apt install git
+
+# --------------------------------------
+
+# stating container bash
+CMD /bin/bash
