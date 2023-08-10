@@ -18,7 +18,7 @@ RUN echo VARIANT_ID=container >> /etc/os-release
 # --------------------------------------
 # list here other commands, if needed
 
-# RUN apt install git
+RUN apt install nano
 
 # --------------------------------------
 
