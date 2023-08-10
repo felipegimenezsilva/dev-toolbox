@@ -7,12 +7,12 @@ As a linux user, is really important keep our system organized. When we start to
 apt-get, pip install, npm install became very commom in our daily tasks, and keep all this
 things organized is a challenging activity.
 
-One time ago, I was trying to avoid install every thing in my host. My idea was create a
-kind of 'python virtual environment' for anything, and then I discover the Podman and the
-podman-toolbox. I was trying to use Docker to keep everything conteinerd, and configuring
-volumes to my files, but I was having some trouble with permissions, usability, etc.
+Some time ago, I was trying to avoid install everything in my host. My idea was to create a
+kind of 'python virtual environment' for anything, and then I found out the Podman and the
+podman-toolbox. I was trying to use Docker to keep everything conteinerd, and I try to configure
+volumes to my files, but I was having some trouble with permissions types, usability, etc.
 
-Podman is very similar to docker, and has the podman-toolbox that already solve these problems,
+Podman is very similar to docker (and maybe better), and the podman-toolbox that already solve these problems,
 and other difficulties founded in 'immutable linux distros'. So, I decided to keep this
 solution here :D .
 
