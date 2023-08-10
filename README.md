@@ -57,6 +57,6 @@ the container automatically. To stop the container, you can use:
 
 Is possible to change the system, pre-installed packages and etc. To
 configure this changes, you just need to :
-* update the Dokerfile, available in container/Dockerfile.dev-toolbox;
+* update the Dockerfile, available in container/Dockerfile.dev-toolbox;
 * remove the actual environment (container/remove.sh) ;
 * build the new image (container/build.sh).
